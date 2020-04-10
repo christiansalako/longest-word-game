@@ -18,7 +18,12 @@ class PagesController < ApplicationController
     @j = @letters[9]
   end
 
+
+
+
   def score
+
+
   @url = "https://wagon-dictionary.herokuapp.com/#{params[:word]}"
   @user_serialized = open(@url).read
   @user = JSON.parse(@user_serialized)
@@ -27,6 +32,8 @@ class PagesController < ApplicationController
     @user = "Hmmm.. not sure about that word."
   elsif @user["found"] == true
     @user = "well done your word is valid"
+  else
+    @user = "You need to submit a word to play!!"
   end
 
   end
