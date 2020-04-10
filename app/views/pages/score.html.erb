@@ -1,8 +1,11 @@
-<br>
-<br>
-<br>
 
-
-<h1> <%= @user%> </h1>
-
-<%= link_to "Play another game?", root_path %>
+<div class="wrapper">
+  <div class ="page-contents">
+    <% if @user == false%>
+      <span> <%= @user %> </span>
+      <% else %>
+     <h3> <%= @user %></h3>
+      <% end %>
+    <h3>  <%= link_to "Play another game?", root_path %> </h3>
+  </div>
+</div>

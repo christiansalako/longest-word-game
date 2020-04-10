@@ -24,7 +24,7 @@ class PagesController < ApplicationController
   @user = JSON.parse(@user_serialized)
 
   if @user["found"] == false
-    @user = "cant find it"
+    @user = "Hmmm.. not sure about that word."
   elsif @user["found"] == true
     @user = "well done your word is valid"
   end

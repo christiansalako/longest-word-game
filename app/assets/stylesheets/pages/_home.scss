@@ -1,19 +1,31 @@
 // Specific CSS for your home-page
+
+.container {
+  position: relative;
+  top: 285px;
+}
+
 .box {
   float: left;
   width: 100px;
   height: 100px;
-  margin: 5px;
   border: 1px solid rgba(0, 0, 0, .2);
   background-color: #7397C8;
   box-shadow: 2px 2px 5px #444A51;
   color: white;
   font-size: 30px;
   font-family: 'Anton', sans-serif;
+  margin : 5px;
+
+
 }
 
+h2 {
+  position: relative;
+  top: 204px;
+}
 
-div p, h3{
+div p, h2{
   text-align: center;
 }
 
@@ -26,11 +38,33 @@ input[type="text"] {
   margin-left: 20px;
 }
 
-form {
-  text-align: center;
-}
-
 
 div p,{
   padding-top: 21px;
 }
+
+
+form {
+  width: 301px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 769px) {
+  form {
+      position:relative;
+      right: 40px;
+      margin-bottom: 100px;
+  }
+}
+
+
+@media (max-width: 769px) {
+   input[type="submit"]{
+      position: relative;
+      left: 5px;
+
+  }
+}
+
+
